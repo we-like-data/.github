@@ -1,0 +1,57 @@
+name: 🐞 Bug
+description: Report a bug or unexpected behavior
+labels: [bug]
+
+body:
+  - type: markdown
+    attributes:
+      value:  Thank you for finding and reporting a bug! ✊  Filling out a comprehensive report of the problem will help us more quickly get you the fix you're looking for.  If you are new to creating bug reports, check out some examples from `prefect` of some [well written bug reports](https://github.com/PrefectHQ/prefect/issues?q=is%3Aissue+label%3A%22great+writeup%22).
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Initial Checks
+      description: |
+        Just want to make sure you need to create a bug report!
+      options:
+        - label: I have searched GitHub for a duplicate issue and I'm sure this is something new
+          required: true
+        - label: I have searched Google & StackOverflow for a solution and couldn't find anything
+          required: true
+        - label: If there are docs, I have followed them, and I still think this is a bug
+          required: true
+        - label: >
+            I am confident that the issue is with the codebase
+            (not my code, or another library in the ecosystem)
+          required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Please explain what you're seeing and what you would expect to see.
+
+        Please provide as much detail as possible to make understanding and solving your problem as quick as possible. 🙏
+    validations:
+      required: true
+
+  - type: textarea
+    id: example
+    attributes:
+      label: Example Code
+      description: >
+        If applicable, please add a self-contained,
+        [minimal, reproducible, example](https://stackoverflow.com/help/minimal-reproducible-example)
+        demonstrating the bug.
+      render: Text
+
+  - type: textarea
+    id: version
+    attributes:
+      label: Environment
+      description: |
+        What is your operating system, and what version of the code are you using?
+      render: Text
+    validations:
+      required: true
