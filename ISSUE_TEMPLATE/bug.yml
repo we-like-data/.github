@@ -45,6 +45,8 @@ body:
         [minimal, reproducible, example](https://stackoverflow.com/help/minimal-reproducible-example)
         demonstrating the bug.
       render: Text
+    validations:
+      required: false
 
   - type: textarea
     id: version
