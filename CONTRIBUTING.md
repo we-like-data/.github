@@ -59,7 +59,17 @@ Our commit message convention adopts the established [Angular commit convention]
 
 #### Types
 
-Check out [Angular's types](https://github.com/angular/angular/blob/22b96b9/CONTRIBUTING.md#type).
+Use one of the following:
+
+* `build`: Changes that affect the build system or external dependencies
+* `ci`: Changes to CI configuration files or scripts
+* `docs`: Documentation only changes
+* `feat`: A new feature
+* `fix`: A bug fix
+* `perf`: A code change that improves performance
+* `refactor`: A code change that neither fixes a bug nor adds a feature
+* `style`: Changes that do not affect the meaning of the code (white-space, formatting, missing quotes, etc.)
+* `test`: Adding tests or correcting existing tests
 
 #### Scopes
 
